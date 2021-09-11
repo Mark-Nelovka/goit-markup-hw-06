@@ -853,6 +853,109 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* .modal-text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
+} */
+
+.modal-form-field {
+  margin-bottom: 10px;
+}
+
+.modal-form-label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+  margin-bottom: 4px;
+}
+
+.input-wrap {
+  position: relative;
+  display: block;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  left: 15px;
+  top: 14px;
+}
+
+.modal-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-top: 12px;
+  resize: none;
+}
+
+.modal-comment::placeholder {
+  font-size: 12px;
+  line-height: 1.33px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  padding-top: 12px;
+}
+
+.label-check {
+  width: 16px;
+  height: 15px;
+  /* color: var(--text); */
+  border: 2px solid #212121;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+.checkbox:checked + .check-label > .label-check {
+  background-color: var(--logo);
+  border: none;
+}
+
+.modal-form-field-end {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .modal-link {
@@ -870,4 +973,31 @@ ul {
 
 .modal-img {
   fill: #000;
+}
+
+.modal-btn {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 55px;
+  font-size: 16px;
+  line-height: 1.87;
+
+  border: 0;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
