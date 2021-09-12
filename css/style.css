@@ -748,7 +748,7 @@ ul {
 }
 
 .footer-link-second {
-  margin-left: 93px;
+  margin-left: 120px;
 }
 
 .footer-subscribe {
@@ -867,14 +867,6 @@ ul {
   margin-bottom: 12px;
 }
 
-/* .modal-text {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--main-text-color);
-  margin-bottom: 4px;
-} */
-
 .modal-form-field {
   margin-bottom: 10px;
 }
@@ -891,6 +883,22 @@ ul {
 .input-wrap {
   position: relative;
   display: block;
+}
+
+.modal-form-input:hover + .modal-form-icon {
+  fill: var(--logo);
+}
+
+.modal-form-input:hover {
+  border-color: var(--logo);
+}
+
+.modal-form-input:focus + .modal-form-icon {
+  fill: var(--logo);
+}
+
+.modal-form-input:focus {
+  border-color: var(--logo);
 }
 
 .modal-form-input {
@@ -915,6 +923,10 @@ ul {
   padding-left: 16px;
   padding-top: 12px;
   resize: none;
+}
+
+.modal-comment:hover {
+  border-color: var(--logo);
 }
 
 .modal-comment::placeholder {
@@ -948,6 +960,11 @@ ul {
   color: #757575;
 }
 
+.contract {
+  margin-left: 5px;
+  color: var(--logo);
+}
+
 .checkbox:checked + .check-label > .label-check {
   background-color: var(--logo);
   border: none;
@@ -972,7 +989,19 @@ ul {
 }
 
 .modal-img {
+  position: absolute;
   fill: #000;
+  top: 50;
+  right: 50;
+  transform: translate(-50%, -50%);
+}
+
+.modal-link:hover .modal-img {
+  fill: var(--logo);
+}
+
+.modal-link:focus .modal-img {
+  fill: var(--logo);
 }
 
 .modal-btn {
